@@ -33,7 +33,7 @@ Copy `.env.example` to `.env` and fill in:
 
 | Variable | Description |
 |---|---|
-| `AGENT_KEY` | Agent auth key (`ag_live_...`), from https://pulsarpay.io |
+| `AGENT_KEY` | Agent auth key (`ag_live_...`), from https://www.pulsarpay.io |
 | `USER_KEY` | User auth key (`Bearer pp_live_...`), needed for `createCharge` |
 | `WALLET_ADDRESS` | Solana wallet address, needed for `withdraw` |
 
