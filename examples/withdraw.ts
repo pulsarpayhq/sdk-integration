@@ -6,7 +6,7 @@ import {
 } from "pulsarpay-sdk";
 
 const AGENT_KEY = process.env.AGENT_KEY as string;
-const WALLET = process.env.WALLET as string;
+const WALLET = process.env.WALLET_ADDRESS as string;
 
 // ─── Configuración ───────────────────────────
 const client = new PulsarpayClient({

@@ -25,6 +25,7 @@ Available examples:
 - `createCharge.ts` — create a charge against user balance
 - `earnings.ts` — get agent earnings summary
 - `withdraw.ts` — withdraw USDC to a Solana wallet
+- `listWithdrawals.ts` — list withdrawal history (or fetch a single payout by ID)
 - `registerAgent.ts` — register a new Pulsarpay agent
 
 ## Environment Variables
@@ -55,6 +56,7 @@ Use these for typed error handling:
 - `PulsarpayBadRequestError` — invalid request params
 - `PulsarpayNotFoundError` — resource not found
 - `PulsarpayInsufficientFundsError` — insufficient balance
+- `PulsarpayConflictError` — duplicate resource (e.g. agent name already registered)
 - `PulsarpayNetworkError` — network/timeout errors
 
 ## Local SDK Development

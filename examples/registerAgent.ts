@@ -2,8 +2,7 @@ import {
     PulsarpayClient,
     PulsarpayUnauthorizedError,
     PulsarpayBadRequestError,
-    PulsarpayNotFoundError,
-    PulsarpayInsufficientFundsError
+    PulsarpayConflictError,
 } from "pulsarpay-sdk";
 
 // ─── Configuración ───────────────────────────
@@ -28,10 +27,8 @@ async function registerAgent() {
             console.error("❌ Agent key inválida o deshabilitada:", err.message);
         } else if (err instanceof PulsarpayBadRequestError) {
             console.error("❌ Bad request:", err.message);
-        } else if (err instanceof PulsarpayNotFoundError) {
-            console.error("❌ Not found:", err.message);
-        } else if (err instanceof PulsarpayInsufficientFundsError) {
-            console.error("❌ Payment Required:", err.message);
+        } else if (err instanceof PulsarpayConflictError) {
+            console.error("❌ Nombre de agente ya registrado:", err.message);
         } else {
             console.error("❌ Error inesperado:", err);
         }

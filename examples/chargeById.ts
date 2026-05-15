@@ -35,28 +35,3 @@ async function getChargeById(id: string) {
 }
 
 getChargeById("cmo0sx0mw0001jv04e903jqbm222");
-
-/*
-
-cd pulsarpay-sdk
-npm install
-npm run build
-npm link
-Esto registra el SDK globalmente en tu máquina.
-Paso 2 — Creás tu proyecto de prueba:
-bashmkdir pulsarpay-test
-cd pulsarpay-test
-npm init -y
-npm link pulsarpay-sdk
-
-
-cada cambio
-# 1 — En el SDK
-cd pulsarpay-sdk
-npm run build
-
-npm link
-
-
-
-*/
