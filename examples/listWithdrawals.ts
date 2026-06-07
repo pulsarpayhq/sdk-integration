@@ -25,7 +25,7 @@ async function listWithdrawals() {
 
         console.log(`✅ ${payouts.length} withdrawal(s) found:\n`);
         for (const p of payouts) {
-            console.log(`  [${p.status}] ${p.id} — ${p.amount} ${p.currency} → ${p.destination.walletAddress}`);
+            console.log(p);
         }
     } catch (err) {
         if (err instanceof PulsarpayUnauthorizedError) {

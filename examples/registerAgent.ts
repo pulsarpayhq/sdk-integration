@@ -14,7 +14,7 @@ async function registerAgent() {
     try {
 
         const result = await client.agents.register({
-            name: "integration-sdk",
+            name: "integration-sdk-v0.2.0",
             email: "sdk@example.com",
             website: "https://example.com",
         });

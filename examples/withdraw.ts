@@ -6,7 +6,9 @@ import {
 } from "pulsarpay-sdk";
 
 const AGENT_KEY = process.env.AGENT_KEY as string;
-const WALLET = process.env.WALLET_ADDRESS as string;
+//const WALLET = process.env.WALLET_ADDRESS as string;
+const PAYPAL_WALLET = process.env.PAYPAL_WALLET_ADDRESS as string;
+
 
 // ─── Configuración ───────────────────────────
 const client = new PulsarpayClient({
@@ -19,8 +21,9 @@ async function testWithdraw() {
 
   try {
     const payout = await client.payments.withdraw({
-      amount: 50,                                             
-      walletAddress: WALLET,
+      amount: 100,                                             
+      walletAddress: PAYPAL_WALLET,
+      currency: "USD",
     });
 
     console.log("✅ Withdrawal exitoso!");

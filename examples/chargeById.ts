@@ -34,4 +34,4 @@ async function getChargeById(id: string) {
     }
 }
 
-getChargeById("cmo0sx0mw0001jv04e903jqbm222");
+getChargeById("cmq31ygqe0004jp04tqhh8jj3");
